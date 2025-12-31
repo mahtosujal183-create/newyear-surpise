@@ -1,0 +1,118 @@
+body {
+    background: radial-gradient(circle at top, #ffe6f2, #ffc1cc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background video */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) brightness(0.6);
+    z-index: -2;
+}
+
+/* Card */
+.container {
+    position: relative;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 🔥 PROFILE VIDEO STYLE 🔥 */
+.profile-video {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff80ab;
+    box-shadow: 0 0 20px #ff99c8;
+    margin-bottom: 15px;
+}
+
+/* Text */
+h1 {
+    font-size: 2.5rem;
+    color: #ff4081;
+    text-shadow: 0 0 15px #ff80ab;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    background: #ff80ab;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff99c8;
+}
+
+button:hover {
+    background: #ff5fa2;
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Love text glow */
+#loveText {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color: #ff66b2;
+    text-shadow: 0 0 20px #ff66b2, 0 0 40px #ff99cc;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff80ab; }
+    to { text-shadow: 0 0 30px #ffb3d9; }
+}
+
+/* Hearts */
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatHearts 6s linear infinite;
+}
+
+@keyframes floatHearts {
+    from { transform: translateY(100vh); opacity: 1; }
+    to { transform: translateY(-10vh); opacity: 0; }
+}

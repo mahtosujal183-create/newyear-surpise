@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shurti 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="love.mp4" type="video/mp4">
+</video>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<!-- First Page -->
+<div class="container" id="mainContainer">
+
+    <!-- 🔥 PHOTO KI JAGAH VIDEO 🔥 -->
+    <video class="profile-video" autoplay muted loop playsinline>
+        <source src="soumya.mp4" type="video/mp4">
+    </video>
+
+    <h1 id="greeting">🎉 Happy New year, Kartika! 🎂</h1>
+    <p id="message">Tumko new year ki bahut bahut shubhkamnayein! 💖</p>
+    <button id="wishButton">🎁 Ek Chhota Surprise!</button>
+</div>
+
+<!-- Surprise Page -->
+<div class="container hidden" id="loveContainer">
+    <div class="overlay">
+        <p id="loveMessage"></p>
+        <h1 id="loveText" class="hidden">💞 With Love 💖</h1>
+        <button id="endButton">✨ End ✨</button>
+    </div>
+</div>
+
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
